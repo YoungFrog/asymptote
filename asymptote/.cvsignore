@@ -14,4 +14,4 @@ autom4te.cache
 config.h
 config.h.in
 .asy_history
-
+genrun.cc
