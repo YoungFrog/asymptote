@@ -49,7 +49,7 @@
 (define-derived-mode asy-mode objc-mode "Asymptote"
   "Emacs mode for editing Asymptote source code.
 For full functionality the `two-mode-mode' package should also be installed
-(http://www.dedasys.com/freesoftware/files/two-mode-mode.el).
+\(http://www.dedasys.com/freesoftware/files/two-mode-mode.el).
 
 I. This package provides two modes:
 1- asy-mode:
@@ -75,7 +75,7 @@ Note that some keys binding are added to the LaTeX-mode-map in lasy-mode if the 
 
 II. To add a menu bar in current 'latex-mode' buffer and activate hot keys, use 'M-x asy-insinuate-latex <RET>'.
 You can automate this feature for all the 'latex-mode' buffers by inserting the five following lines in your .emacs initialization file:
-(eval-after-load \"latex\"
+\(eval-after-load \"latex\"
   '(progn
      ;; Add here your personal features for 'latex-mode':
      (asy-insinuate-latex t) ;; Asymptote globally insinuates Latex.
@@ -149,8 +149,8 @@ to the contents of the accessible portion of the buffer."
 
 If you also want this feature in pure latex-mode, you can set this variable to `nil' and add these lines in your .emacs:
 
-(require 'asy-mode)
-(eval-after-load \"latex\"
+\(require 'asy-mode)
+\(eval-after-load \"latex\"
   '(progn
      (define-key LaTeX-mode-map (kbd \"<C-return>\") 'lasy-view-ps)
      (define-key LaTeX-mode-map (kbd \"<C-S-return>\") 'asy-master-tex-view-ps-f)
