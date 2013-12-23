@@ -347,9 +347,6 @@ This variable must be modified only using the function 'asy-set-master-tex by M-
    '(("\\[.*?\\.asy\\]" . 'asy-link-face)))
   )
 
-(setq buffers-menu-max-size nil)
-(setq mode-name "Asymptote")
-
 (if running-xemacs-p
     (defvar asy-menu
       '("Asy"
