@@ -527,7 +527,7 @@ point operator cast(pair p)
 point[] operator cast(pair[] p)
 {/*<asyxml></code><documentation>Cast pair[] to point[] relatively to the current coordinate
    system 'currentcoordsys'.</documentation></operator></asyxml>*/
-  pair[] op;
+  point[] op;
   for (int i = 0; i < p.length; ++i) {
     op.push((point)p[i]);
   }
